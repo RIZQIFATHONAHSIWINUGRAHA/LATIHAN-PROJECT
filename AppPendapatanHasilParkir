@@ -1,1 +1,24 @@
-#
+#include <conio.h>
+#include <stdio.h>
+#include <iostream.h>
+
+char nama[50],shift[30];
+int waktu,masuk,saldo ;
+
+main(){
+cout<<"\tDATA Pemasukan Area Parkir Per Shift "<<endl;
+cout<<"Nama Member : ";gets(nama);
+cout<<"Shift Berapa : ";gets(shift);
+cout<<"Saldo Masuk Perjam : ";cin>>masuk;
+cout<<"Berapa Lama Waktu Kerja :";cin>>waktu;
+
+saldo = (masuk*waktu);
+clrscr();
+
+cout <<" Hai " <<nama <<endl;
+cout << "Saat ini Kamu bekerja di Shift  : " <<shift <<endl;
+cout <<"Total Pendapatan Shift Kamu adalah : " <<saldo;
+
+
+getch();
+}
